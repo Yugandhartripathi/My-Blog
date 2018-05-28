@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="blog.css">
+    <title>Machine Learning</title>
+      <style type="text/css">
+          .navbar-right{
+              justify-content: flex-end; 
+          }
+          .navbar{
+              padding-left: 50px;
+              padding-right: 50px;
+          }
+      </style>
+  </head>
+  <body>
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">ML Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="navbarSupportedContent">
+      <a class="nav-link" href="https://github.com/Yugandhartripathi"><i class="fab fa-github"></i> Yugandhar tripathi</a>
+  </div>
+</nav>
+<div class="container">
+<div class="post">
+	 
+	<div class="date">May 28 2018</div>
+	<h2>Machine Learning 101</h2>
+
+	<p>
+        In broad terms machine learning is a subset or a way of achieving Artificial Intelligence (AI) .     
+    AI involves machines that can perform tasks that are characteristic of human intelligence like logical decision making, learning and improving from experience.
+	</p>
+
+	<p>AI can be divided into Narrow and Generalized ,
+Generalized AI refers to systems which can in theory solve any problem and this is where most of the buzzwords that we hear these days like Machine Learning , Deep Learning emerged.
+</p>
+
+	<p>Even though the idea has been around for ages now , but it started giving significant and groundbreaking results just around a decade ago with the emergence and popularization of internet leading to generation of tons of digital data and creation of efficient and faster than ever storage and processing equipment.
+</p>
+    <h3>WHAT IS MACHINE LEARNING?</h3>
+    <p>
+        Arthur Samuel in 1959 defined machine learning as a field of study that gives computers the ability to learn without being explicitly programmed.
+    </p>
+    <p class="highlight">
+        What is the meaning of “learn”?
+    </p>
+    <p>
+    A computer program is said to learn from experience E, with respect to some task T, and some
+performance measure P, if its performance on T as measured by P improves
+with experience E. 
+    </p>
+    <p>
+    Let’s break it down ,
+Imagine you go out in the woods to play archery with your friends ,
+If you have never used a bow and arrow yourself before , How does your brain learn to use that then?
+</p>
+<div class="image">
+    <img class="nestImg" src="bowArrow.jpg">
+</div>
+    <p>
+    You will first take a shot hoping it goes somewhere near the target (fingers crossed and all) ,
+Then you will see where it hits and for the next shot your brain will adjust posture , direction, force and other features accordingly to improve the result , will you get the bull’s eye in second shot? Highly unlikely . So your brain repeats the process again and again improving slowly in each iteration and if you <b>practice enough shots</b> you will be able to consistently hit the target accurately , this is what we call as developing muscle memory for a task.
+</p>
+    <p>
+        Let’s compare it with the above definition of how a computer program learns , let taking a shot be task T , P be the probability that it hits the next shot on target and E be the experience of having a program take 10’s or 1000’s of shots. So it takes a shot T  , based on the result calculates P for next shot and then makes changes to it’s features based on E and then take shot T  again and repeat the process until it gets it right consistently.
+    </p>
+    <p>
+        Now, imagine there is a wind blowing in the area , just like you will miss shots due to change in conditions the system will fail too but by the above process one can adapt and overcome this situation too.
+    </p>
+    <div class="image">
+    <img class="nestImg" src="wind.jpg">
+</div>
+    <p class="highlight">
+        But for how many cases?
+    </p>
+    <p>
+    A machine learning agent can quickly run 1000’s of simulations again and adapt to new environment conditions and hit the target consistently under any situation whereas we as humans don’t have that kind of patience , time or energy to practice so many times so as to master it with the change of variables.
+    </p>
+     <h3>Three basic learning models :</h3>
+<p class="highlight">
+        1)Supervised Learning 
+    </p>
+    <p class="highlight">
+        When Why and How:
+    </p>
+    <p>
+        When the system is provided features and their corresponding labels and is then expected to predict the label for some previously unknown features.
+    </p>
+    <p class="highlight">
+        METHODS:
+    </p>
+    <p>When we need the output in a continuous range then it’s called a regression problem.
+To Solve regression problems we aim to find the best fit curve such that root mean squared error of given data is minimum then use that curve to predict values of new data.
+
+Example-predicting price of some product in future based on past records , weather prediction etc.
+    </p>
+    <div class="image">
+    <img src="supervised.png">
+</div>
+        <p>
+When we need to categorise some data into some finite discrete classes(like 0,1,2…) then it becomes a classification problem.
+To make a binary classifier i.e. which just has two possible outcomes 0 or 1 , yes or no we use perceptron algorithm where we aim to find the equation of a line which separates given training data such that data points on one side of the line are of one class and data points on the other side are of the other.
+            
+            Example- classifying mail as spam or not spam , finding the presence of tumor from x-rays etc.
+        </p>
+    <p class="highlight">
+        2)Unsupervised Learning 
+    </p>
+    <p class="highlight">
+        When Why and How:
+    </p>
+    <p>
+    When we only have data features but no labels and we have to find patterns in data and group data having similar features together .
+Unsupervised learning is adopted when using machine learning on problems where the answer is not known.
+</p>
+    <p class="highlight">
+        METHODS:
+    </p>
+    <p>Clustering : There are various algorithms to perform clustering like K means clustering and hierarchical clustering , In K means clustering algorithm we need to enter the value of K beforehand that is how many clusters we want to find in this ,whereas there is no such limitation in hierarchical model.
+</p>
+    <div class="image">
+    <img class="nestImg1" src="unsupervised.png">
+</div>
+    <p>Example- Recommendation system , Social Network analysis , image segmentation etc.</p>
+    <p class="highlight">
+        3)Reinforcement Learning 
+    </p>
+    <p class="highlight">
+        When Why and How:
+    </p>
+    <p>This is quite different from above two methods here we do not provide any data we just give the equipments to perform a task and then set up trial and error based reward system where for each desired interaction of agent with environment , agent gets rewarded and builds upon that . It is same as how a dog is trained , in the beginning he does not understand any command but when he randomly follows our command once and gets rewarded for that he repeats that action on the same command again for reward and eventually learns to perform the task without rewards. 
+</p>
+    <div class="image">
+    <img src="reinforcement.png">
+</div>
+    <p>Example- Self driving vehicles , Qlearning for atari games </p>
+    <h3>Conclusion :</h3>
+<p>We have come a long way in this field and applications of machine learning and AI can be found everywhere now , from classification of search results on google to facebook friend recommendations to image recognition systems to personal voice assistants  to self driving cars , 
+    But it's just the beginning and there are still immense possibilities out there that can be automated with machine learning and AI.</p>
+<p class="highlight">
+There is hope that we can one day make an ultimate AI based system which can solve any variable problem X answers to which are still unknown to humanity.
+    </p>
+	<hr>
+</div> 
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
