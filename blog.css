@@ -44,7 +44,8 @@ h3{
     font-size: 1.2rem;
 }
 img{
-   
+    width: 80%;
+    max-height: 400px;
     margin-bottom: 10px;
 }
 .image{
@@ -53,11 +54,9 @@ img{
 }
 .nestImg{
      width: 40%; 
-    height: 600px;
     margin-bottom: 10px;
 }
 .nestImg1{
      width: 80%; 
-    height: 500px;
     margin-bottom: 10px;
 }
