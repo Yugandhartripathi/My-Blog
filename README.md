@@ -1,2 +1,2 @@
-# Yugandhartripathi.github.io
+# About
 My very own static blog page
